@@ -221,7 +221,7 @@ export default function Home() {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
        marginTop:"120px",
-      height:'100vh',
+      height:'96vh',
       // borderTop:'5px solid #364968 ',
       // borderBottom:'5px solid #364968 ',
       // overflow:'auto',
