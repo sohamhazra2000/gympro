@@ -14,9 +14,7 @@ export default function Login(a) {
     const hm=()=>{
       navigate("/")
     }
-    const pr=()=>{
-      navigate("/Product") 
-    }
+  
   
     const dispatch = useDispatch();
   
@@ -65,11 +63,6 @@ export default function Login(a) {
     <Button variant="outlined" color="secondary" onClick={hm} sx={{marginTop:'60px',marginRight:"60px",border:"3px solid #3fb572", color:"green"}}>
               HOMEPAGE
              </Button>
-             
-  
-             <Button variant="outlined" color="secondary" onClick={pr} sx={{marginTop:'60px',border:"3px solid #3fb572", color:"green"}}>
-              PRODUCT
-             </Button>
              </Box>
   
       
@@ -93,7 +86,7 @@ export default function Login(a) {
       }}>
         <Container>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6} sx={{ margin: "0 auto" }}>
+            <Grid item xs={12} md={6} sx={{ margin: "50px auto" }}>
               <Paper elevation={24}  square={false} sx={{ padding: 2,  backgroundColor: 'rgba(255, 255, 255, 0.5)', border:'2px solid' ,borderColor:'#3fb572',marginTop:{xs:"150px",md:"75px"}}}>
               <CardHeader title="LOGIN"    style={{ 
                 color: '#3fb572',

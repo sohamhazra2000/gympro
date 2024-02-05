@@ -11,7 +11,7 @@ export default function Blogd() {
     useEffect(()=>{
         dispatch(blogdet(params.id))
 
-    },[])
+    },[dispatch,params.id])
     const{det}=useSelector((state)=>state.Blo)
   return (
   <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>

@@ -31,7 +31,7 @@ const Testimonial = () => {
     const dispatch=useDispatch()
     useEffect(()=>{
         dispatch(Testm())
-    },[])
+    },[dispatch])
     const{Tmonial}=useSelector((state)=>state.Hom)
 
   return (

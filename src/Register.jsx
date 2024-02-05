@@ -3,21 +3,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { reg } from "./Redux/AuthSlice";
 import { Box, Button, CardHeader, Container, Grid, Paper, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+//import styled from "styled-components";
 import { useState } from "react";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
-const VisuallyHiddenInput = styled("input")({
-    clip: "rect(0 0 0 0)",
-    clipPath: "inset(50%)",
-    height: 1,
-    overflow: "hidden",
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    whiteSpace: "nowrap",
-    width: 1,
-  });
+// const VisuallyHiddenInput = styled("input")({
+//     clip: "rect(0 0 0 0)",
+//     clipPath: "inset(50%)",
+//     height: 1,
+//     overflow: "hidden",
+//     position: "absolute",
+//     bottom: 0,
+//     left: 0,
+//     whiteSpace: "nowrap",
+//     width: 1,
+//   });
   
   export default function Register() {
     const [img,setImg] = useState("");
@@ -64,7 +64,7 @@ const VisuallyHiddenInput = styled("input")({
   
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} sx={{ margin:"auto",marginTop:"25px" }}>
+          <Grid item xs={12} md={6} sx={{ margin:"auto",marginTop:"50px" }}>
           <Paper elevation={24}  square={false}sx={{ padding: 2,   backgroundColor: 'rgba(255, 255, 255, 0.5)', border:'2px solid' ,borderColor:'#3fb572',marginTop:"30px",marginBottom:"50px"}}>
             <CardHeader title="Registrations"    style={{ 
                   color: '#3fb572',

@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import {Card,CardContent,Typography,Button, CardActionArea, Box} from "@mui/material";
+import {Card,Typography,Button, Box} from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import CardMedia from '@mui/material/CardMedia';
@@ -14,7 +14,7 @@ function Services() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(Bas());
-   }, []);
+   }, [dispatch]);
    const {Ser} = useSelector((state) => state.Hom);
    const settings = {
     // dots: true,

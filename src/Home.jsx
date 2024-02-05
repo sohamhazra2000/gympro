@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Ba } from './Redux/Homeslice'
 import Carousel from 'react-material-ui-carousel'
-import { Box, Container, Grid, Paper, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import { produc } from './Redux/Helper'
-import zIndex from '@mui/material/styles/zIndex'
 import Trainer from './Trainer'
 import Services from './Services'
 import Testimonial from './Testimonials'
-import Blogs from './Blogs'
 import Car from './Car'
 let timer;
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
   const dispatch=useDispatch()
   useEffect(()=>{
     dispatch(Ba())
-  },[])
+  },[dispatch])
 
   useEffect(()=>{
     const a1=()=>{ 
@@ -57,7 +55,7 @@ export default function Home() {
                     position: 'relative',
                 }}
             >
-                <img src={produc(mm.image)} style={{height: '100vh', width: '100%'}} />
+                <img src={produc(mm.image)}  alt="abc"style={{height: '100vh', width: '100%'}} />
                 <Typography variant='h2' style={{zIndex:5, position: 'absolute', bottom: "300px",left:105, color:"wheat"}}>{mm.title}</Typography>
                 <Typography variant='h3' style={{zIndex:5, position: 'absolute', bottom:"230px",left:105, color:"wheat"}}>{mm.subtitle}</Typography>
             </Box>

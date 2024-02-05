@@ -14,7 +14,7 @@ export default function Serviced() {
     const dispatch=useDispatch()
     useEffect(()=>{
         dispatch(Bass(id))
-    },[])
+    },[dispatch,id])
     const{Serdet}=useSelector((state)=>state.Hom)
     console.log(Serdet)
 

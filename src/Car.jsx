@@ -1,6 +1,6 @@
 
 
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Slider from 'react-slick';
@@ -40,10 +40,10 @@ export default function Car() {
   const dispatch=useDispatch()
   useEffect(()=>{
       dispatch(blogs())
-  },[])
+  },[dispatch])
   const{items}=useSelector((state)=>state.Blo)
   const theme = useTheme();
-  
+  console.log(theme)
 
   return (
     <div style={{height:'500px'}}>

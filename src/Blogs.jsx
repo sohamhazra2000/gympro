@@ -9,7 +9,7 @@ export default function Blogs() {
     const dispatch=useDispatch()
     useEffect(()=>{
         dispatch(blogs())
-    },[])
+    },[dispatch])
     const{items}=useSelector((state)=>state.Blo)
     
     return (
