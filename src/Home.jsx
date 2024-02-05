@@ -56,7 +56,7 @@ export default function Home() {
                 }}
             >
                 <img src={produc(mm.image)}  alt="abc"style={{height: '100vh', width: '100%'}} />
-                <Typography variant='h2' style={{zIndex:5, position: 'absolute', bottom: "300px",left:105, color:"wheat"}}>{mm.title}</Typography>
+                <Typography variant='h2' style={{zIndex:5, position: 'absolute', bottom: "300px",left:105,color:"#3993ee"}}>{mm.title}</Typography>
                 <Typography variant='h3' style={{zIndex:5, position: 'absolute', bottom:"230px",left:105, color:"wheat"}}>{mm.subtitle}</Typography>
             </Box>
         ))
@@ -221,7 +221,7 @@ export default function Home() {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
        marginTop:"120px",
-      height:'115vh',
+      height:'100vh',
       // borderTop:'5px solid #364968 ',
       // borderBottom:'5px solid #364968 ',
       // overflow:'auto',

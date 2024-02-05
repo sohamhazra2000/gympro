@@ -40,7 +40,8 @@ const Testimonial = () => {
       style={{ display: "flex", justifyContent: "center", marginTop: 50,backgroundColor:'#f4fcfc',height:'550px' }}
     >
       <div style={{ width: "50%", textAlign: "center",marginTop:"30px" }}>
-        <Typography  variant="h3"style={{ color:"#364968"}}>testimonial</Typography> 
+        <Typography  variant="h3"style={{ color:"#364968"}}>TESTIMONIAL</Typography> 
+        <div style={{width:'200px',height:'3px',backgroundColor:"#eab870", marginBottom:'65px',marginTop:"15px",marginLeft:"280px"}}></div>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           {Tmonial.map((mm)=>(
              <Card img={produc(mm.image)} name={mm.client_name}  review={mm.review}/>
